@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Action Recognizer</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock %}
+</head>
+<body style="margin : 0px;">
+<div class="jss95" style="background-image: url({% static 'images/bg5.jpg' %}); opacity:0.9">
+    <div class="jss1">
+        <div class="MuiGrid-root jss98  MuiGrid-container">
+            <div class="MuiGrid-root jss99  MuiGrid-item">
+                <div class="jss2">
+                    <h4 class="jss3" align="center" style="color:black;">HUMAN ACTIONS RECOGNIZER</h1>
+                    <br>
+                    <div class="row">
+                        <span class="border border-warning rounded" style="color:black;"><div class="col-sm-4">Walking</div></span>
+                        <div class="col-sm-1"></div>
+                        <span class="border border-warning rounded" style="color:black;"><div class="col-sm-4">Running</div></span>
+                        <div class="col-sm-1"></div>
+                        <span class="border border-warning rounded" style="color:black;"><div class="col-sm-4">Jogging</div></span>
+                        <div class="col-sm-1"></div>
+                        <span class="border border-warning rounded" style="color:black;"><div class="col-sm-4">Handwaving</div></span>
+                        <div class="col-sm-1"></div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <span class="border border-warning rounded" style="color:black;"><div class="col-sm-4">Handclapping</div></span>
+                        <div class="col-sm-1"></div>
+                        <span class="border border-warning rounded" style="color:black;"><div class="col-sm-4">Boxing</div></span>
+                    </div>
+                </div>
+                <div class="jss2">
+                    <form action="/" method="post" class="form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <div class="fieldWrapper" style="color:black;font-family:'Times New Roman';">
+                        {{ form.video.errors }}
+                        <label for="{{ form.video.id_for_label }}">Video:</label>
+                        {{ form.video }}
+                    </div>
+                    <!-- {{ form }} -->
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-warning" style="color: black; font-face: bold;"> PREDICT ACTION</button>
+                    <!-- <button type="submit" class="button">Predict Action</button> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

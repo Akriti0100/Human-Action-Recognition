@@ -1,6 +1,6 @@
   <h1 align="center">
   <br>
-  <!--<a href="https://akriti.pythonanywhere.com/"><img src="https://github.com/Akriti0100/Antidote/blob/main/Users/static/users2/logo.png" alt="Antidote" width="200"></a>-->
+  <img src="https://github.com/Akriti0100/Human-Action-Recognition/blob/main/images/Jogging.gif" alt="Action" width="200">
   <br>
   HUMAN ACTION RECOGNITION
   <br>
@@ -23,12 +23,12 @@ walking, clapping, hand-waving and boxing.
 </div>
 
 <p align="center">
-  <a href="#project-scope">Project Scope</a> •
-  <a href="#data-analysis">Data Analysis</a> •
-  <a href="#model-used">Model Used</a> •
-  <a href="#input-output-screenshots">I/O Screenshots</a> •
-  <a href="#methodology-flowchart">Methodology Flowchart</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#project-scope">Project Scope</a> â€¢
+  <a href="#data-analysis">Data Analysis</a> â€¢
+  <a href="#model-used">Model Used</a> â€¢
+  <a href="#input-output-screenshots">I/O Screenshots</a> â€¢
+  <a href="#methodology-flowchart">Methodology Flowchart</a> â€¢
+  <a href="#how-to-use">How To Use</a> â€¢
   <a href="#license">License</a>
 </p>
 
@@ -58,7 +58,7 @@ There are potentially a lot of applications of video recognition :
   - Loading each video in a NumPy array yields the shape of video in the form of a tuple 
       - (No. of Videos, No. of frames, height, width, channels)
   - Each video consists of 3 channels i.e. R(red), G(green), B(blue)
-* The dataset contains 144 videos – 24 videos for each of the 6 categories mentioned above.
+* The dataset contains 144 videos â€“ 24 videos for each of the 6 categories mentioned above.
 
 </div>
 
@@ -66,7 +66,7 @@ There are potentially a lot of applications of video recognition :
 
 ## Model Used
 
-* Convolutional Neural Network [Refer: `model.json` for implementation and `Model.weights.best.hdf5` for weights of the model]
+* Convolutional Neural Network [Refer: <a href="https://github.com/Akriti0100/Human-Action-Recognition/blob/main/ActionRec/actions/model.json">`model.json`</a> for implementation and <a href="https://drive.google.com/file/d/1-9qVHM-f3FWYir2KCwPUUE0Tar5Ll_mi/view?usp=sharing">`Model.weights.best.hdf5` </a> for weights of the model]
   - CNNs are best suited for the task of image recognition. The importance of these networks is that it encodes the content of an image that can be flattened into 1-dimensional array.
   - The Convolutional layers are responsible for generating feature maps using kernels which find patterns in different regions of the image. These feature maps can be stacked into a 3-d array thus increasing the depth of the input image.
   - These layers are followed by the Pooling layers, that reduce the spatial dimensions of the output obtained from the convolutional layers.
@@ -77,10 +77,14 @@ There are potentially a lot of applications of video recognition :
   - The CNN model used in this project is depicted below. 
   - Multiple convolutional and pooling layers are stacked together.
   - These are followed by some fully-connected layers, where the last layer is the output layer. 
-  - The output layer contains 6 neurons (one for each category). The network gives the probability corresponding to each class.
+  - Output layer contains 6 neurons (one for each category).The network gives the probability corresponding to each class.
   
 ```
-
+<img src="https://github.com/Akriti0100/Human-Action-Recognition/blob/main/images/cnn_model.png" alt="Model" width="500" height="600">
+<br><br>
+<p>The training and validation loss graph of the above sequential CNN model is as shown below:</p>
+<img src="https://github.com/Akriti0100/Human-Action-Recognition/blob/main/images/modelLoss.png" alt="Loss" width="500">
+ 
 </div>
 
 <!--<div align="justify">-->
@@ -102,9 +106,9 @@ There are potentially a lot of applications of video recognition :
  
 ## Input-Output Screenshots
  
-<!--![screenshot](https://github.com/Akriti0100/Antidote/blob/main/Users/static/Users/Screenshots.gif)
+![screenshot](https://github.com/Akriti0100/Human-Action-Recognition/blob/main/images/Input-Output%20Screenshots.gif)
   
-For details, you may also refer the `Input - Output Screenshots` </a> folder.-->
+For details, you may also refer the <a href="https://github.com/Akriti0100/Human-Action-Recognition/tree/main/Input-Output%20Screenshots">`Input - Output Screenshots`</a> folder.
 
 </div>
 
@@ -112,7 +116,7 @@ For details, you may also refer the `Input - Output Screenshots` </a> folder.-->
  
 ## Methodology Flowchart
  
-<!--<img src="https://github.com/Akriti0100/Antidote/blob/main/Users/static/Users/Flowchart.jpg" alt="Flowchart">-->
+<img src="https://github.com/Akriti0100/Human-Action-Recognition/blob/main/images/WorkFlow.jpg" alt="Flowchart">
 
 </div>
 
@@ -120,7 +124,7 @@ For details, you may also refer the `Input - Output Screenshots` </a> folder.-->
  
 ## How To Use
 
-To clone and run this application, you’ll need `Git` installed on your computer. <br>
+To clone and run this application, youâ€™ll need `Git` installed on your computer. <br>
 From your command line:
 
 ```

@@ -2,7 +2,7 @@
   <br>
   <img src="https://github.com/Akriti0100/Human-Action-Recognition/blob/main/images/Jogging.gif" alt="Action" width="200">
   <br>
-  HUMAN ACTION RECOGNITION
+  HUMAN ACTIONS RECOGNIZER
   <br>
 </h1>
 
